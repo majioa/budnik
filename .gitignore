@@ -25,3 +25,4 @@ budnik-*.tar
 *~
 
 *.sw*
+.env

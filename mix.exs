@@ -15,16 +15,16 @@ defmodule Budnik.MixProject do
   def application do
     [
       extra_applications: [:logger],
-      applications: [:httpoison]
+# mod: { Budnik, [] },
+      applications: [:dotenv, :httpoison]
     ]
   end
 
   # Run "mix help deps" to learn about dependencies.
   defp deps do
     [
-# {:jason, "~> 1.2"},
-#    {:httpoison, "~> 1.7"},
       {:nadia, "~> 0.7"},
+      {:dotenv, "~> 3.0.0"},
       # {:dep_from_git, git: "https://github.com/elixir-lang/my_dep.git", tag: "0.1.0"}
     ]
   end
